@@ -1,0 +1,63 @@
+#form {
+    margin-top: 40px;
+}
+
+#top {
+    margin-left: 42%;
+}
+
+
+/*  RAZÃO SOCIAL  */
+
+#insertRazãoSocial {
+    margin-top: -10px;
+}
+
+
+/*  ENDEREÇO  */
+
+#insertAdress {
+    margin-top: -10px;
+}
+
+
+/*  BAIRRO  */
+
+#insertBairro {
+    margin-top: -10px;
+}
+
+
+/*  CIDADE  */
+
+#insertCity {
+    margin-top: -10px;
+}
+
+
+/*  NUMERO DA NF  */
+
+#insertNfNumber {
+    margin-top: -10px;
+}
+
+
+/*  observações  */
+
+#insertObservações {
+    margin-top: -5px;
+}
+
+
+/*  VALOR DA NF  */
+
+.nfValor {
+    margin-top: -20%;
+}
+
+
+/*  DATE  */
+
+.date {
+    margin-top: -20%;
+}

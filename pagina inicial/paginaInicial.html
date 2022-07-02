@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Inicial</title>
+    <script src="../main.js"></script>
+    <link rel="stylesheet" href="../bulma.css">
+    <link rel="stylesheet" href="pageinicial.css">
+</head>
+
+<body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="paginaInicial.html">
+                <img src="../logopc.png" width="118" height="28">
+            </a>
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="paginaInicial.html">
+                    <strong>Home</strong>
+                </a>
+
+                <div id="register" class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                        <strong>Registros</strong>
+                    </a>
+
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item">
+                            <strong>Cancelamento de notas</strong>
+                        </a>
+                        <a class="navbar-item">
+                            <strong>Documento de transporte</strong>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                        <strong>Consultas</strong>
+                    </a>
+
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item">
+                            <strong>Entregas</strong>
+                        </a>
+                        <a class="navbar-item">
+                            <strong>Relatórios</strong>
+                        </a>
+                        <a class="navbar-item">
+                  Contact
+                        </a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item">
+                  Report an issue
+                </a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </nav>
+
+    <div class="columns">
+        <div class="column is-full" id="backgroundImage"><img class="imgintro" src="industryfoto.jpg"></div>
+
+    </div>
+
+    <section class="seção">
+        <div class="columns">
+            <div class="column is-full">
+                <div class="skew-menu">
+                    <ul>
+                        <li><a href="../Calcular frete/calcularFrete.html">Calcular frete</a></li>
+                        <li><a href="../Criar rotas/form.html">Criar nova rota</a></li>
+                        <li><a href="#">Exibir alerta</a></li>
+                        <li><a href="../Consultar Bairros/ConsultarBairros.html">Consultar bairros</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+
+</html>

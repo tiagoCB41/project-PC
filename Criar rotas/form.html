@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar nova rota</title>
+    <link rel="stylesheet" href="../bulma.css">
+    <link rel="stylesheet" href="../pagina inicial/pageinicial.css">
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="../pagina inicial/paginaInicial.html">
+                <img src="../logopc.png" width="118" height="28">
+            </a>
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="../pagina inicial/paginaInicial.html">
+                    <strong>Home</strong>
+                </a>
+
+                <div id="register" class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                        <strong>Registros</strong>
+                    </a>
+
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item">
+                            <strong>Cancelamento de notas</strong>
+                        </a>
+                        <a class="navbar-item">
+                            <strong>Documento de transporte</strong>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                        <strong>Consultas</strong>
+                    </a>
+
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item">
+                            <strong>Entregas</strong>
+                        </a>
+                        <a class="navbar-item">
+                            <strong>Relatórios</strong>
+                        </a>
+                        <a class="navbar-item">
+                  Contact
+                </a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item">
+                  Report an issue
+                </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </nav>
+
+
+    <section>
+        <div class="container is-max-desktop" id="form">
+            <div class="card">
+                <header class="card-header">
+
+                    <p class="card-header-title" id="top">
+                        Criar nova rota
+                    </p>
+
+                </header>
+                <div class="card-content ">
+                    <div class="content ">
+                        <br>
+                        <div class="columns">
+
+                            <div class="column is-one-third">
+                                <div class="nome">
+                                    <p id="insertNome"><strong>Motorista</strong></p>
+                                    <div class="select" id="select-motorista">
+                                        <select>
+                                                <option>selecione o motorista</option>
+                                                <option>With options</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="column">
+                                <div class="nameClient">
+                                    <p><strong>Cliente</strong></p>
+                                    <input id="insertClientName" class="input" type="text" placeholder="Nome do cliente" autocomplete>
+                                </div>
+                            </div>
+
+
+
+                            <div class="column" id="3">
+                                <div class="nf">
+                                    <p><strong>Nota fiscal</strong></p>
+                                    <input id="insertNF" class="input" type="text" placeholder="Numero da NF" autocomplete>
+                                </div>
+                            </div>
+
+                        </div>
+                        <br>
+
+                        <div class="columns">
+
+
+                            <div class="column is-one-third">
+
+                                <div class="adress">
+                                    <p id="adress"><strong>Endereço</strong></p>
+                                    <input id="inputEndereço" class="input" type="text" placeholder="Insira o endereço" autocomplete>
+                                </div>
+                                <br>
+                                <br>
+                                <div class="date">
+                                    <p id="date"><strong>Data</strong></p>
+                                    <input id="insertDate" class="input" type="date" autocomplete>
+                                </div>
+                            </div>
+
+
+                            <div class="column">
+
+                                <div class="field">
+                                    <label class="label">Observações</label>
+                                    <div class="control">
+                                        <textarea class="textarea" placeholder="Observações"></textarea>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <br>
+                <footer class="card-footer ">
+                    <a href="# " class="card-footer-item ">Save</a>
+                    <a href="# " class="card-footer-item ">Delete</a>
+                </footer>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

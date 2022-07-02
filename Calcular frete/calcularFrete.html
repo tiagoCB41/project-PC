@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular frete</title>
+    <link rel="stylesheet" href="../bulma.css">
+    <link rel="stylesheet" href="../pagina inicial/pageinicial.css">
+    <link rel="stylesheet" href="calcularFrete.css">
+    <script src="../main.js"></script>
+
+</head>
+
+<body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="../pagina inicial/paginaInicial.html">
+                <img src="../logopc.png" width="118" height="28">
+            </a>
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="../pagina inicial/paginaInicial.html">
+                    <strong>Home</strong>
+                </a>
+
+                <div id="register" class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                        <strong>Registros</strong>
+                    </a>
+
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item">
+                            <strong>Cancelamento de notas</strong>
+                        </a>
+                        <a class="navbar-item">
+                            <strong>Documento de transporte</strong>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                        <strong>Consultas</strong>
+                    </a>
+
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item">
+                            <strong>Entregas</strong>
+                        </a>
+                        <a class="navbar-item">
+                            <strong>Relatórios</strong>
+                        </a>
+                        <a class="navbar-item">
+                  Contact
+                </a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item">
+                  Report an issue
+                </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </nav>
+
+
+    <section>
+        <div class="container is-max-desktop" id="form">
+            <div class="card">
+                <header class="card-header">
+
+                    <p class="card-header-title" id="top">
+                        Calcular frete
+                    </p>
+
+                </header>
+                <div class="card-content ">
+                    <div class="content ">
+                        <br>
+                        <div class="columns">
+
+                            <div class="column is-one-third">
+
+                                <div class="razãoSocial">
+                                    <p><strong>Razão social</strong></p>
+                                    <input id="insertRazãoSocial" class="input" type="text" placeholder="Insira a razão social" onchange="getCorporateName()">
+                                </div>
+
+                            </div>
+
+                            <div class="column">
+                                <div class="adress">
+                                    <p><strong>Endereço</strong></p>
+                                    <input id="insertAdress" class="input" type="text" placeholder="Insira o endereço" autocomplete onchange="getAdress()">
+                                </div>
+                            </div>
+
+
+
+                            <div class="column">
+                                <div class="bairro">
+                                    <p><strong>Bairro</strong></p>
+                                    <input id="insertBairro" class="input" type="text" placeholder="Insira o bairro" autocomplete onchange="getBairro()">
+                                </div>
+                            </div>
+
+                        </div>
+                        <br>
+
+                        <div class="columns">
+
+
+                            <div class="column is-one-third">
+
+                                <div class="city">
+                                    <p><strong>Cidade</strong></p>
+                                    <input id="insertCity" class="input" type="text" placeholder="Insira a cidade" autocomplete onchange="getCity()">
+                                </div>
+
+                            </div>
+
+
+                            <div class="column">
+
+                                <div class="nfNumber">
+                                    <p><strong>Numero da NF</strong></p>
+                                    <input id="insertNfNumber" class="input" type="text" placeholder="Insira apenas o numero da NF" autocomplete onchange="getNfNumber()">
+                                </div>
+
+                            </div>
+
+
+                            <div class="column">
+
+                                <div class="field">
+                                    <label class="label">Observações</label>
+                                    <div class="control">
+                                        <textarea id="insertObservações" class="textarea" placeholder="Observações" onchange="getObservações()"></textarea>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="columns">
+                            <div class="column is-one-third">
+
+                                <div class="nfValor">
+                                    <p><strong>Valor da NF</strong></p>
+                                    <input id="insertNfValor" class="input" type="text" placeholder="Insira o valor da NF" autocomplete="disable" onchange="getNfValor()">
+                                </div>
+
+                            </div>
+
+                            <div class="column is-one-third">
+
+                                <div class="date">
+                                    <p id="date"><strong>Data</strong></p>
+                                    <input id="insertDate" class="input" type="date" autocomplete onchange="getDate()">
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <br>
+                <footer class="card-footer ">
+                    <a onclick="fazerRequisição()" class="card-footer-item ">Save</a>
+                    <a href="../pagina inicial/paginaInicial.html " class="card-footer-item ">Voltar</a>
+                </footer>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

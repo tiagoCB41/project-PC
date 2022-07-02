@@ -1,0 +1,98 @@
+.navbar-start{
+    margin-left: 0px;
+}
+#register {
+margin-left: 10px;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+.imgintro {
+    min-height: 92%;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.navbar {
+    background-color: #123479e5;
+    margin-right: -11px;
+}
+
+.navbar-item {
+    color: #e0e0e0;
+}
+
+.skew-menu {
+    text-align: center;
+    position:absolute;
+	bottom: 3%;
+    left: 0;
+    right: 0;
+    
+}
+
+.skew-menu ul {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    transform: skew(-25deg);
+}
+
+.skew-menu ul li {
+    background: #0086b3e9;
+    float: left;
+    border-right: 1px solid #eee;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    transition: all 0.3s linear;
+    height: 50px !important;
+    width: 200px;
+}
+
+.skew-menu ul li:first-child {
+    border-radius: 7px 0 0 7px;
+}
+
+.skew-menu ul li:last-child {
+    border-right: none;
+    border-radius: 0 7px 7px 0;
+}
+
+.skew-menu ul li:hover {
+    background: #eee;
+    color: tomato;
+}
+
+.skew-menu ul li a {
+    display: block;
+    padding: 1em 2em;
+    color: inherit;
+    text-decoration: none;
+    transform: skew(25deg);
+}
+
+body {
+    background-color: rgb(231, 231, 231);
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.navbar-link {
+    color: #e0e0e0;
+}
+
+.navbar-dropdown {
+    background-color: #123479e5;
+}

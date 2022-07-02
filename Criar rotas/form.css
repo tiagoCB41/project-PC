@@ -1,0 +1,84 @@
+/*     FORM      */
+
+#form {
+    margin-top: 20px;
+}
+
+
+/*  TITULO DO FORM  */
+
+#top {
+    margin-left: 43%;
+}
+
+
+/* NOME DO MOTORISTA */
+
+.nome {
+    margin-left: 7%;
+}
+
+#select-motorista {
+    margin-top: -10px;
+}
+
+
+/*  NOME DO CLIENTE  */
+
+.nameClient {
+    margin-left: -15%;
+    width: 103%;
+}
+
+#insertClientName {
+    margin-top: -10px;
+}
+
+
+/* NOTA FISCAL */
+
+.nf {
+    margin-left: -6%;
+}
+
+#insertNF {
+    margin-top: -10px;
+}
+
+
+/* DATE */
+
+.date {
+    margin-left: 7.5%;
+}
+
+#insertDate {
+    width: 74%;
+    margin-top: -10px;
+}
+
+
+/*  ENDEREÇO  */
+
+.adress {
+    margin-left: 7.5%;
+}
+
+#inputEndereço {
+    margin-top: -10px;
+    width: 74%;
+}
+
+
+/*  OBSERVAÇÕES  */
+
+.field {
+    margin-left: -4%;
+}
+
+
+/*  VALOR DA NF  */
+
+.nfValor {
+    margin-top: -5%;
+}

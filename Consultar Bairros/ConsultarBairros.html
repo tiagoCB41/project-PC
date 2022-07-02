@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular frete</title>
+    <link rel="stylesheet" href="../bulma.css">
+    <link rel="stylesheet" href="../pagina inicial/pageinicial.css">
+    <link rel="stylesheet" href="consultarBairros.css">
+    <script src="./manipularBairros.js"></script>
+
+
+</head>
+
+<body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="../pagina inicial/paginaInicial.html">
+                <img src="../logopc.png" width="118" height="28">
+            </a>
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="../pagina inicial/paginaInicial.html">
+                    <strong>Home</strong>
+                </a>
+
+                <div id="register" class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                        <strong>Registros</strong>
+                    </a>
+
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item">
+                            <strong>Cancelamento de notas</strong>
+                        </a>
+                        <a class="navbar-item">
+                            <strong>Documento de transporte</strong>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                        <strong>Consultas</strong>
+                    </a>
+
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item">
+                            <strong>Entregas</strong>
+                        </a>
+                        <a class="navbar-item">
+                            <strong>Relatórios</strong>
+                        </a>
+                        <a class="navbar-item">
+                            Contact
+                        </a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item">
+                            Report an issue
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </nav>
+
+
+    <section>
+        <div class="container is-max-desktop" id="form">
+            <div class="card">
+                <header class="card-header">
+
+                    <p class="card-header-title" id="top">
+                        Pesquisar bairros
+                    </p>
+
+                </header>
+                <div class="card-content ">
+                    <div class="content ">
+                        <div class="columns">
+                            <div class="column is-one-third">
+
+                                <div class="adress">
+                                    <p><strong>Bairro</strong></p>
+                                    <input id="insertBairro" class="input" type="text" placeholder="Insira o bairro" list="mySuggestion" onchange="getBairro()">
+
+                                    <datalist id="mySuggestion">    
+                                        <option value="cabral"></option>
+                                        <option value="porenquanto"></option>
+                                        <option value="vila operária"> </option>
+                                        <option value="matinha"> </option>
+                                        <option value="ilhotas"></option>
+                                        <option value="frei serafim"></option>
+                                        <option value="marquês"></option>
+                                        <option value="piçarra"></option>
+                                        <option value="aroeiras"></option>
+                                        <option value="acarape"></option>
+                                        <option value="aeroporto"></option>
+                                        <option value="água mineral"></option>
+                                        <option value="alto alegre"></option>
+                                        <option value="alvorada"></option>
+                                        <option value="bom jesus"></option>
+                                        <option value="buenos aires"></option>
+                                        <option value="cidade industrial"></option>
+                                        <option value="embrapa"></option>
+                                        <option value="itaperu"></option>
+                                        <option value="parque brasil"></option>
+                                        <option value="mafrense"></option>
+                                        <option value="mafuá"></option>
+                                        <option value="matadouro"></option>
+                                        <option value="mamorare"></option>
+                                        <option value="monte verde"></option>
+                                        <option value="mocambinho"></option>
+                                        <option value="morro da esperança"></option>
+                                        <option value="nova brasília"></option>
+                                        <option value="olarias"></option>
+                                        <option value="poti velho"></option>
+                                        <option value="primavera"></option>
+                                        <option value="real copagri"></option>
+                                        <option value="santa maria da codipi"></option>
+                                        <option value="santa rosa"></option>
+                                        <option value="são joaquim"></option>
+                                        <option value="jacinta andrade"></option>
+                                        <option value="pirajá"></option>
+                                        <option value="vila são francisco"></option>
+                                        <option value="angelim"></option>
+                                        <option value="angélica"></option>
+                                        <option value="areias"></option>
+                                        <option value="bela vista"></option>
+                                        <option value="brasiliar"></option>
+                                        <option value="catarina"></option>
+                                        <option value="cidade nova"></option>
+                                        <option value="cristo rei"></option>
+                                        <option value="distrito industrial"></option>
+                                        <option value="esplanada"></option>
+                                        <option value="lourival parente"></option>
+                                        <option value="macaúba"></option>
+                                        <option value="monte castelo"></option>
+                                        <option value="morada nova"></option>
+                                        <option value="parque jacinta"></option>
+                                        <option value="parque piaui"></option>
+                                        <option value="parque são joão"></option>
+                                        <option value="parque sul"></option>
+                                        <option value="pedra miuda"></option>
+                                        <option value="pio XII"></option>
+                                        <option value="portal da alegria"></option>
+                                        <option value="promorar"></option>
+                                        <option value="redenção"></option>
+                                        <option value="saci"></option>
+                                        <option value="santa cruz"></option>
+                                        <option value="santa luzia"></option>
+                                        <option value="santo antonio"></option>
+                                        <option value="são lourenço"></option>
+                                        <option value="são pedro"></option>
+                                        <option value="tabuleta"></option>
+                                        <option value="três andares"></option>
+                                        <option value="triunfo"></option>
+                                        <option value="vermelha"></option>
+                                        <option value="nossa senhora das graças"></option>
+                                        <option value="jockey"></option>
+                                        <option value="fátima"></option>
+                                        <option value="horto"></option>
+                                        <option value="são cristovão"></option>
+                                        <option value="ininga"></option>
+                                        <option value="santa isabel"></option>
+                                        <option value="morada do sol"></option>
+                                        <option value="noivos"></option>
+                                        <option value="morros"></option>
+                                        <option value="campestre"></option>
+                                        <option value="pedra mole"></option>
+                                        <option value="cidade jardim"></option>
+                                        <option value="novo uruguai"></option>
+                                        <option value="piçarreira"></option>
+                                        <option value="planalto"></option>
+                                        <option value="porto do centro"></option>
+                                        <option value="samapi"></option>
+                                        <option value="santa lia"></option>
+                                        <option value="satélite"></option>
+                                        <option value="socopó"></option>
+                                        <option value="tabajaras"></option>
+                                        <option value="uruguai"></option>
+                                        <option value="vale do gavião"></option>
+                                        <option value="vale quem tem"></option>
+                                        <option value="verde lar"></option>
+                                        <option value="arvores verdes"></option>
+                                        <option value="são joão"></option>
+                                        <option value="zoobotânico"></option>
+                                        <option value="recanto das palmeiras"></option>
+                                        <option value="beira rio"></option>
+                                        <option value="bom principio"></option>
+                                        <option value="colorado"></option>
+                                        <option value="comprida"></option>
+                                        <option value="extrema"></option>
+                                        <option value="flor do campo"></option>
+                                        <option value="gurupi"></option>
+                                        <option value="itararé"></option>
+                                        <option value="livramento"></option>
+                                        <option value="novo horizonte"></option>
+                                        <option value="parque ideal"></option>
+                                        <option value="parque poti"></option>
+                                        <option value="redonda"></option>
+                                        <option value="renascença"></option>
+                                        <option value="são raimundo"></option>
+                                        <option value="são sebatião"></option>
+                                        <option value="tancredo neves"></option>
+                                        <option value="todos os santos"></option>
+                                        <option value="verde cap"></option>
+
+
+                                </div>
+
+                            </div>
+
+                            <div class="column">
+                                <iframe class="imgBairros" id="zoom" src="./abrirBairros.html">...</iframe>
+                                
+                            </div>
+
+                        </div>
+                        <div class="columns">
+                            <div id="cardReceber" class="card-content">
+                                <div id="receberZona" class="column">
+                                    <script>
+                                        let zonaValue = sessionStorage.getItem('zona')
+                                        let bairro = sessionStorage.getItem('bairro')
+                                        if (bairro == null) {
+                                            bairro = ""
+                                        } else {
+                                        document.getElementById("receberZona").innerHTML = "<h4><strong>Bairro: </strong>" + bairro + "</h4> <h4> <strong>Zona: </strong>" + zonaValue + "</h4>"
+                                    }
+                                        
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+                
+                <footer class="card-footer ">
+                    
+                    <a href="../pagina inicial/paginaInicial.html " class="card-footer-item ">Voltar</a>
+                </footer>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

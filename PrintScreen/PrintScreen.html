@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular frete</title>
+    <link rel="stylesheet" href="../bulma.css">
+    <link rel="stylesheet" href="../pagina inicial/pageinicial.css">
+    <link rel="stylesheet" href="printScreen.css">
+    <script src="../main.js"></script>
+
+</head>
+
+<body>
+
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="../pagina inicial/paginaInicial.html">
+                <img src="../logopc.png" width="118" height="28">
+            </a>
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="../pagina inicial/paginaInicial.html">
+                    <strong>Home</strong>
+                </a>
+
+                <div id="register" class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                        <strong>Registros</strong>
+                    </a>
+
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item">
+                            <strong>Cancelamento de notas</strong>
+                        </a>
+                        <a class="navbar-item">
+                            <strong>Documento de transporte</strong>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                        <strong>Consultas</strong>
+                    </a>
+
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item">
+                            <strong>Entregas</strong>
+                        </a>
+                        <a class="navbar-item">
+                            <strong>Relatórios</strong>
+                        </a>
+                        <a class="navbar-item">
+                      Contact
+                    </a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item">
+                      Report an issue
+                    </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </nav>
+    <section>
+
+        <div class="container">
+            <h1 class="title is-6">TRANSPORTADORA</h1>
+            <h3><strong>RAZÃO SOCIAL:</strong>&ensp; EXPRESSO PRINCESA DO SUL</h3>
+            <H4><strong>CPNJ:</strong>&ensp; 06.848.881/0001-81</H4>
+            <div id="inserirData">
+                <script>
+                    dateObj = sessionStorage.getItem("data")
+                    document.getElementById("inserirData").innerHTML = "<h5><strong>Data :&ensp;</strong>" + dateObj + "</h5>"
+                    console.log(dateObj)
+                </script>
+            </div>
+            <hr>
+            <h1 class="title is-6">EMITENTE</h1>
+
+            <div class="columns">
+                <div class="column is-half">
+                    <h5><strong>Razão Social: </strong> AUTO PEÇAS PE CICERO F-19 </h5>
+                    <h5><strong>Endereço: </strong> AV SÃO FRANCISCO 2802</h5>
+                    <h5><strong>Bairro:</strong> COMPRIDA</h5>
+                    <h5><strong>Cidade: </strong> TERESINA-PI</h5>
+                </div>
+                <div id="two" class="column is-half">
+                    <h5><strong>CNPJ: </strong> 07.965.809/0020-60</h5>
+                </div>
+            </div>
+            <hr>
+            <h1 class="title is-6">REMETENTE</h1>
+
+            <div id="inserirRazãoSocial">
+                <script>
+                    razãoSocialObj = sessionStorage.getItem('razão-social')
+                    document.getElementById("inserirRazãoSocial").innerHTML = "<h5><strong>Razão Social:&ensp;</strong>" + razãoSocialObj + "</h5>"
+                    console.log(razãoSocialObj)
+                </script>
+            </div>
+
+            <div id="inserirEndereço">
+                <script>
+                    endereçoObj = sessionStorage.getItem('endereço')
+                    document.getElementById("inserirEndereço").innerHTML = "<h5><strong>Endereço:&ensp;</strong>" + endereçoObj + "</h5>"
+                    console.log(razãoSocialObj)
+                </script>
+            </div>
+
+            <div id="inserirBairro">
+                <script>
+                    bairroObj = sessionStorage.getItem('bairro')
+                    document.getElementById("inserirBairro").innerHTML = "<h5><strong>Bairro:&ensp;</strong>" + bairroObj + "</h5>"
+                    console.log(bairroObj)
+                </script>
+            </div>
+
+            <div id="inserirCidade">
+                <script>
+                    cidadeObj = sessionStorage.getItem('cidade')
+                    document.getElementById("inserirCidade").innerHTML = "<h5><strong>Cidade:&ensp;</strong>" + cidadeObj + "</h5>"
+                    console.log(cidadeObj)
+                </script>
+            </div>
+
+            <hr>
+            <div class="columns">
+                <div class="column is is-half">
+
+                    <div id="inserirNfNumber">
+                        <script>
+                            numeroNFObj = sessionStorage.getItem('numeroNF')
+                            document.getElementById("inserirNfNumber").innerHTML = "<h5><strong>Nfe:&ensp;</strong>" + numeroNFObj + "</h5>"
+                            console.log(cidadeObj)
+                        </script>
+                    </div>
+
+                    <div id="inserirFreteValor">
+                        <script>
+                            freteValorObj = sessionStorage.getItem('valorFrete')
+                            document.getElementById("inserirFreteValor").innerHTML = "<h5><strong>Valor do Frete:&ensp;</strong>R$ " + freteValorObj + "</h5>"
+                            console.log(freteValorObj)
+                        </script>
+                    </div>
+
+                </div>
+                <div id="two" class="column">
+
+                    <div id="inserirNfValor">
+                        <script>
+                            nfValorObj = sessionStorage.getItem('valorNF')
+                            document.getElementById("inserirNfValor").innerHTML = "<h5><strong>Valor da Nfe:&ensp;</strong>R$ " + nfValorObj + "</h5>"
+                            console.log(freteValorObj)
+                        </script>
+                    </div>
+
+                    <div id="inserirNfSituação">
+                        <script>
+                            if (nfValorObj >= 1500) {
+                                document.getElementById("inserirNfSituação").innerHTML = "<h5><strong>Situação do Frete:&ensp;</strong>Pago(✅)</h5>"
+                            } else {
+                                document.getElementById("inserirNfSituação").innerHTML = "<h5><strong>Situação do Frete:&ensp;</strong>A Pagar(❌)</h5>"
+                            }
+                        </script>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <form>
+
+            <div class="noprint" id="printer">
+                <ul>
+                    <li><a value="Print this page" onclick="window.print()">Imprimir</a></li>
+                    <li><a href="../pagina inicial/paginaInicial.html">Voltar</a></li>
+                </ul>
+            </div>
+
+        </form>
+    </section>
+
+</body>
+
+</html>
