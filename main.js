@@ -1,4 +1,4 @@
-﻿//RAZÃO SOCIAL
+//RAZÃO SOCIAL
 let corporateName
 
 function getCorporateName() {
@@ -60,11 +60,15 @@ function getNfNumber() {
 /*  NF VALOR */
 
 let nfValor
+let nfValor2
+let ValorImpresso
 
 function getNfValor() {
     nfValor = document.getElementById("insertNfValor").value
-    nfValor = parseInt(nfValor)
-    console.log(nfValor)
+    nfValor = parseFloat(nfValor)
+    nfValor2 = nfValor.toLocaleString('pt-br', { minimumFractionDigits: 2 });
+    console.log(nfValor2)
+   
     calcularFrete()
 }
 
@@ -72,12 +76,18 @@ function getNfValor() {
 /* VALOR DO FRETE */
 
 let valorDoFrete
+let valorFreteFinal
 
-function calcularFrete() {
-    valorDoFrete = nfValor * 0.03
+function calcularFrete() {  
+valorDoFrete = nfValor * 0.03
     valorDoFreteReal = valorDoFrete.toLocaleString('pt-br', { minimumFractionDigits: 2 });
-    console.log("valor do frete " + valorDoFreteReal)
+function formatMoney(n, c, d, t) {
+  c = isNaN(c = Math.abs(c)) ? 2 : c, d = d == undefined ? "," : d, t = t == undefined ? "." : t, s = n < 0 ? "-" : "", i = parseInt(n = Math.abs(+n || 0).toFixed(c)) + "", j = (j = i.length) > 3 ? j % 3 : 0;
+  return s + (j ? i.substr(0, j) + t : "") + i.substr(j).replace(/(\d{3})(?=\d)/g, "$1" + t) + (c ? d + Math.abs(n - i).toFixed(c).slice(2) : "");
+}    
 
+valorFreteFinal = formatMoney(valorDoFrete)
+console.log(valorFreteFinal)
 }
 
 
@@ -99,8 +109,8 @@ function fazerRequisição() {
     sessionStorage.setItem("bairro", district)
     sessionStorage.setItem("cidade", (city))
     sessionStorage.setItem("numeroNF", (nfNumber))
-    sessionStorage.setItem("valorNF", (nfValor))
-    sessionStorage.setItem("valorFrete", valorDoFreteReal)
+    sessionStorage.setItem("valorNF", (nfValor2))
+    sessionStorage.setItem("valorFrete", valorFreteFinal)
     sessionStorage.setItem("observações", (observações))
     if (date == undefined || corporateName == undefined || adress == undefined || district == undefined || city == undefined || nfNumber == undefined || nfValor == undefined) {} else {
         window.location.href = "../PrintScreen/PrintScreen.html";
