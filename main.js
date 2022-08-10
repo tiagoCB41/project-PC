@@ -1,4 +1,3 @@
-//RAZÃO SOCIAL
 let corporateName
 
 function getCorporateName() {
@@ -66,6 +65,7 @@ let ValorImpresso
 function getNfValor() {
     nfValor = document.getElementById("insertNfValor").value
     nfValor = parseFloat(nfValor)
+    sessionStorage.setItem("valorComparate", (nfValor))
     nfValor2 = nfValor.toLocaleString('pt-br', { minimumFractionDigits: 2 });
     console.log(nfValor2)
    
