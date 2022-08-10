@@ -164,6 +164,7 @@
                     <div id="inserirNfValor">
                         <script>
                             nfValorObj = sessionStorage.getItem('valorNF')
+                            nfValorComparate = sessionStorage.getItem('valorComparate')
                             document.getElementById("inserirNfValor").innerHTML = "<h5><strong>Valor da Nfe:&ensp;</strong>R$ " + nfValorObj + "</h5>"
                             console.log(freteValorObj)
                         </script>
@@ -171,7 +172,7 @@
 
                     <div id="inserirNfSituação">
                         <script>
-                            if (nfValorObj >= 1500) {
+                            if (nfValorComparate >= 1500) {
                                 document.getElementById("inserirNfSituação").innerHTML = "<h5><strong>Situação do Frete:&ensp;</strong>Pago(✅)</h5>"
                             } else {
                                 document.getElementById("inserirNfSituação").innerHTML = "<h5><strong>Situação do Frete:&ensp;</strong>A Pagar(❌)</h5>"
